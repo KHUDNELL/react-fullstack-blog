@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import NavBar from './Navbar';
 import ArticlePage from './pages/ArticlePage';
-import ArticlesList from './pages/ArticlesList';
+import ArticlesListPage from './pages/ArticlesListPage';
 
 import {
   BrowserRouter as Router,
@@ -19,7 +19,7 @@ function App() {
       <div id="page-body">
       <Route path="/" component={HomePage} exact/>
       <Route path="/about" component={AboutPage}/>
-      <Route path="/articles-list" component={ArticlesList}/>
+      <Route path="/articles-list" component={ArticlesListPage}/>
       <Route path="/article/:name" component={ArticlePage}/>
       </div>
     </div>
